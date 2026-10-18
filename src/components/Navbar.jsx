@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Download, Moon, Sun } from "lucide-react";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { navLinks, personalInfo } from "../data/data";
 
 export default function Navbar({ darkMode, toggleDarkMode }) {
@@ -84,7 +85,33 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
           </div>
 
           {/* Right controls */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
+            {/* GitHub profile link */}
+            <motion.a
+              href={personalInfo.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Sanskar's GitHub profile"
+              whileHover={{ scale: 1.1, y: -1 }}
+              whileTap={{ scale: 0.9 }}
+              className="hidden md:flex w-9 h-9 rounded-xl items-center justify-center text-gray-400 transition-all duration-200 border border-white/10 hover:border-white/40 hover:text-white hover:bg-[#181717]"
+            >
+              <FaGithub size={17} />
+            </motion.a>
+
+            {/* LinkedIn profile link */}
+            <motion.a
+              href={personalInfo.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Sanskar's LinkedIn profile"
+              whileHover={{ scale: 1.1, y: -1 }}
+              whileTap={{ scale: 0.9 }}
+              className="hidden md:flex w-9 h-9 rounded-xl items-center justify-center text-gray-400 transition-all duration-200 border border-white/10 hover:border-[#0A66C2]/60 hover:text-white hover:bg-[#0A66C2]"
+            >
+              <FaLinkedinIn size={17} />
+            </motion.a>
+
             {/* Dark mode toggle */}
             <motion.button
               onClick={toggleDarkMode}
@@ -149,6 +176,29 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
                   {link.label}
                 </motion.a>
               ))}
+
+              {/* Social icons in mobile menu */}
+              <div className="flex gap-3 px-4 pt-2 pb-1">
+                <a
+                  href={personalInfo.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Sanskar's GitHub profile"
+                  className="w-10 h-10 rounded-xl flex items-center justify-center text-gray-400 border border-white/10 hover:bg-[#181717] hover:text-white transition-all"
+                >
+                  <FaGithub size={18} />
+                </a>
+                <a
+                  href={personalInfo.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Sanskar's LinkedIn profile"
+                  className="w-10 h-10 rounded-xl flex items-center justify-center text-gray-400 border border-white/10 hover:bg-[#0A66C2] hover:text-white transition-all"
+                >
+                  <FaLinkedinIn size={18} />
+                </a>
+              </div>
+
               <a
                 href={personalInfo.resumeUrl}
                 download

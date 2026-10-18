@@ -11,9 +11,8 @@ export const personalInfo = {
   email: "dumbresanskar23@gmail.com",
   phone: "+91 8830405039",
   location: "Pune, Maharashtra",
-  // TODO: Replace these with your actual profile links
-  github: "https://github.com/sanskardumbre",
-  linkedin: "https://linkedin.com/in/sanskardumbre",
+  github: "https://github.com/dumbresanskar20",
+  linkedin: "https://www.linkedin.com/in/sanskar-dumbre-a60404354",
   // Path to your resume PDF — place it at /public/resume.pdf
   resumeUrl: "/resume.pdf",
 };
@@ -71,8 +70,7 @@ export const projects = [
     tags: ["React", "Capacitor", "Node.js", "Express", "MySQL", "Socket.IO", "Razorpay", "JWT"],
     category: "SaaS",
     featured: true,
-    liveUrl: "https://mealbook.in", // TODO: Replace if URL changes
-    githubUrl: "https://github.com/sanskardumbre/mealbook", // TODO: Replace with actual repo
+    liveUrl: "https://mealbook.in",
     badge: null,
   },
   {
@@ -84,8 +82,7 @@ export const projects = [
     tags: ["React", "Node.js", "MongoDB", "Vercel"],
     category: "SaaS",
     featured: false,
-    liveUrl: "https://fitpulse-zeta-five.vercel.app", // TODO: Confirm live URL
-    githubUrl: "https://github.com/sanskardumbre/fitpulse", // TODO: Replace with actual repo
+    liveUrl: "https://fitpulse-zeta-five.vercel.app",
     badge: null,
   },
   {
@@ -97,8 +94,7 @@ export const projects = [
     tags: ["React", "Node.js", "MySQL", "Express"],
     category: "Full Stack",
     featured: false,
-    liveUrl: "https://co-po-software.vercel.app", // TODO: Confirm live URL
-    githubUrl: "https://github.com/sanskardumbre/co-po-software", // TODO: Replace with actual repo
+    liveUrl: "https://co-po-software.vercel.app",
     badge: "In Development",
   },
   {
@@ -110,8 +106,7 @@ export const projects = [
     tags: ["React", "Node.js", "MongoDB", "SEO"],
     category: "Full Stack",
     featured: false,
-    liveUrl: "https://news-platform-chi-lovat.vercel.app", // TODO: Confirm live URL
-    githubUrl: "https://github.com/sanskardumbre/janta-journal", // TODO: Replace with actual repo
+    liveUrl: "https://news-platform-chi-lovat.vercel.app",
     badge: null,
   },
   {
@@ -123,8 +118,7 @@ export const projects = [
     tags: ["HTML5", "CSS3", "JavaScript", "SEO"],
     category: "Websites",
     featured: false,
-    liveUrl: "https://intellxskill.in", // TODO: Confirm live URL
-    githubUrl: "https://github.com/sanskardumbre/intellxskill", // TODO: Replace with actual repo
+    liveUrl: "https://intellxskill.in",
     badge: null,
   },
   {
@@ -136,8 +130,7 @@ export const projects = [
     tags: ["HTML5", "CSS3", "JavaScript", "Google Maps"],
     category: "Websites",
     featured: false,
-    liveUrl: "https://bunnylandpreschool-talegaon-dabhade.com", // TODO: Confirm live URL
-    githubUrl: "https://github.com/sanskardumbre/bunnyland", // TODO: Replace with actual repo
+    liveUrl: "https://bunnylandpreschool-talegaon-dabhade.com",
     badge: null,
   },
 ];
@@ -222,7 +215,6 @@ export const certifications = [
     id: 1,
     title: "Full Stack Developer",
     issuer: "Sumago Infotech Pvt. Ltd.",
-    // TODO: Add credential/certificate URL if available
     credentialUrl: "#",
   },
   {
